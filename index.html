@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Coffee Places</title>
+
+    <!--Mis estilos css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Libreria de Leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <!-- Iconos-->
+    <link rel="stylesheet" href="css/fontello.css">
+
+    <!--Geojson puntos de las coffeeshop, tuve que poner el script en el head para que tuviera alcance-->
+    <script src = "js/coffeepoints.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="cabecera">
+        <img src="images/coffee-beans.png" alt="coffee">
+        <h1>Specialty Coffee Places</h1>
+      </div>
+      <div class="menu">
+          <nav class="topnav" id="myTopnav">
+            <a href="" class="active">Recursos</a>
+            <a href="https://leafletjs.com/reference-1.7.1.html" target="_blank">Leaflet</a>
+            <a href="http://geopois.com/blog/leaflet/leaflet-geojson" target="_blank">Geojson</a>
+            <a href="https://www.flaticon.com/" target="_blank">Simbología</a>
+            <a href="javascript:void(0);" class="icon-menu" onclick="myFunction()"></a>
+          </nav>
+        </div>
+    </header>
+
+<!--Visualización del mapa-->
+  <div id="mapid">
+      <script type="text/javascript" src = "js/map.js"></script>
+  </div>
+
+<!--Funcionalidad del menú-->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+<!--Pie de página-->
+    <footer>
+      <div class = "contenedor">
+        <p class = "info">Mapa elaborado por <b>Luisana Indriago Gauna</b> &copy; 2020</p>
+        <div class="sociales">
+            <a class = "icon-instagram" href="https://www.instagram.com/luisanaig/" target="_blank"></a>
+            <a class = "icon-linkedin" href="https://www.linkedin.com/in/luisana-indriago-gauna-682719121/" target="_blank"></a>
+            <a class = "icon-github-circled-alt2" href="https://github.com/LuisanaIG" target="_blank"></a>
+        </div>
+      </div>
+  </body>
+</html>

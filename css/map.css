@@ -1,0 +1,23 @@
+#mapid {
+  height: 90vh;
+  width: 100%;
+}
+
+.popup {
+  padding:10px 15px 10px 15px;
+  border-radius: 10px;
+  background-color: #F1414F;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.infocafe {
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px 10px 10px 35px;
+  background: rgba(201, 119, 103);
+  color: white;
+  line-height: 2;
+  font-size: 12px;
+}
